@@ -34,8 +34,10 @@ const Actions = {
 
         //https://davidshimjs.github.io/qrcodejs/
         Z.html('#slide-qrcode', '');
+        const roomUrl = `https://solvertank.tech/solverpoll/r/?room=${App.obj.room}`
+        console.log(roomUrl);
         const qrcode = new QRCode(Z.get('slide-qrcode'), {
-            text: `https://solvertank.tech/solverpoll/r/?room=${App.obj.room}`,
+            text: roomUrl,
             correctLevel: QRCode.CorrectLevel.H
         });
 
