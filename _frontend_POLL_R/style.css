@@ -1,0 +1,74 @@
+body {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+#main {
+    max-width: 320px;
+    margin: 0 auto;
+    text-align: center;
+}	
+
+
+#error {
+    display: none;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+    border: none;
+    background-color: #ff0000;
+    color: white;
+}
+
+#cube {
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+    border: none;
+}
+
+#start {
+    display: none;
+    cursor: pointer;
+    padding: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+    margin: 2rem;
+    text-align: center;
+    border: none;
+    background-color: #C0C0C0;
+    color: black;
+    font-size: 140%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#start:hover {
+    background-color: #D0D0D0;
+}
+
+
+
+
+
+#quiz {
+    display:none;
+}
+
+.quiz-answer {
+    cursor: pointer;
+    padding: 1rem;
+    margin: 2rem;
+    text-align: center;
+    border: none;
+    background-color: #253d79;
+    color: white;
+    font-size: 180%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#tagpost-text {
+    margin-top: 2rem;
+    width: 100%;
+    resize: none;
+    
+}

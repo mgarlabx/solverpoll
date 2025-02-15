@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<title>Solverpoll</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="images/cube.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+    <!-- https://github.com/lipis/flag-icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css" />
+
+    <!-- https://davidshimjs.github.io/qrcodejs/ -->
+    <script src="assets/qrcode/qrcode.js"></script>
+
+    <!-- https://wordcloud2-js.timdream.org/#love -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/wordcloud2.js/1.0.6/wordcloud2.min.js"></script> -->
+    <script src="assets/wordcloud/wordcloud2.min.js"></script>
+
+    <!-- Marked -->
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- SolverJS -->
+    <script src="https://solvertank.tech/solverjs/solverjs.js"></script>
+    <link rel="stylesheet" href="https://solvertank.tech/solverjs/solverjs.css">
+
+    <!-- Custom -->
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <!-- HEADER -->
+
+    <div id="header">
+        <div id="header-left">
+            <img width="30" src="images/cube.png">&nbsp;&nbsp;&nbsp;
+            <div id="header-title">Solverpoll</div>
+        </div>
+        <div id="header-right">
+            <div id="menu-toggle"><i class="fa-solid fa-bars"></i></div>
+            <div id="menu-dropdown">
+                <div class="menu-item" id="menu-new"><i class="fa-solid fa-file"></i>
+                    <div class="menu-caption" id="menu-caption-new"></div>
+                </div>
+                <div class="menu-separator"></div>
+                <div class="menu-item" id="menu-en">
+                    <div class="fi fi-us" id="flag-0"></div>&nbsp;&nbsp;English
+                </div>
+                <div class="menu-item" id="menu-pt">
+                    <div class="fi fi-br" id="flag-1"></div>&nbsp;&nbsp;Português
+                </div>
+                <div class="menu-item" id="menu-es">
+                    <div class="fi fi-es" id="flag-2"></div>&nbsp;&nbsp;Castellano
+                </div>
+                <div class="menu-separator"></div>
+                <div class="menu-item" id="menu-download"><i class="fa-solid fa-download"></i>
+                    <div class="menu-caption">Download</div>
+                </div>
+                <div class="menu-item" id="menu-upload"><i class="fa-solid fa-upload"></i>
+                    <div class="menu-caption">Upload</div>
+                </div>
+                <div class="menu-separator"></div>
+                <div class="menu-item" id="menu-terms"><i class="fa-solid fa-file-contract"></i>
+                    <div class="menu-caption" id="menu-caption-terms"></div>
+                </div>
+                <div class="menu-item" id="menu-info"><i class="fa-solid fa-circle-info"></i>
+                    <div class="menu-caption" id="menu-caption-about"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="actions"></div>
+
+    <div id="slide">
+        <div id="slide-command"></div>
+        <div id="slide-body">
+            <div id="slide-left"></div>
+            <div id="slide-right">
+                <div id="slide-qrcode" class="slide-div" onclick="slide_toggle(0)"></div>
+                <div id="slide-padlock" class="slide-div" onclick="slide_toggle(1)"><img src="images/padlock.png"></div>
+                <div id="slide-chart" class="slide-div"></div>
+                <canvas id="slide-tag" class="slide-div"></canvas>
+            </div>
+        </div>
+        <div id="slide-room" onclick="actions_room_update()"></div>
+    </div>
+
+</body>
+
+</html>

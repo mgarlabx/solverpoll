@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<title>Solverpoll</title>
+<meta charset="utf-8">
+<link rel="icon" type="image/png" href="cube.png">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<head>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.gstatic.com" rel="preconnect">
+    <link
+        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+        rel="stylesheet">
+
+        <!-- SolverJS -->
+    <script src="https://solvertank.tech/solverjs/solverjs.js"></script>
+    <link rel="stylesheet" href="https://solvertank.tech/solverjs/solverjs.css">
+
+    <!-- Custom -->
+    <script type="module" src="script.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+    <div id="main">
+        <div class="all-div" id="error"></div>
+        <div class="all-div" id="start" onclick="start()">Start</div>
+        <div class="all-div" id="quiz">
+            <div class="quiz-answer" id="quiz-answer-0" onclick="quiz_answer(0)" style="background-color:#2481fb">A</div>
+            <div class="quiz-answer" id="quiz-answer-1" onclick="quiz_answer(1)" style="background-color:#3ab086">B</div>
+            <div class="quiz-answer" id="quiz-answer-2" onclick="quiz_answer(2)" style="background-color:#f5c42d">C</div>
+            <div class="quiz-answer" id="quiz-answer-3" onclick="quiz_answer(3)" style="background-color:#e43d5f">D</div>
+            <div class="quiz-answer" id="quiz-answer-4" onclick="quiz_answer(4)" style="background-color:#787992">E</div>
+        </div>
+        <div class="all-div" id="tagpost">
+            <textarea id="tagpost-text" rows="5"></textarea>
+            <div class="quiz-answer" onclick="tagpost_submit()" style="background-color:#787992">OK</div>
+        </div>
+        <div id="cube"><img src="cube.png" width="60" alt="Logo"></div>
+    </div>
+
+</body>
+
+</html>
