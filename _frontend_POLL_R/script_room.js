@@ -109,7 +109,7 @@ const Room = {
     },
 
     tagpostSubmit() {
-        const text = Z.getInputTextArea('tagpost-text');
+        const text = Z.getInputTextarea('tagpost-text');
         if (text.trim() === '') {
             Z.error('Text is empty');
             return;
