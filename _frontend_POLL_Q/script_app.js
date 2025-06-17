@@ -18,10 +18,11 @@ const App = {
             if (res === false) {
                 Z.termsError(App.obj.language);
                 return;
+            } else {
+                Z.recordAccess(appName);
             }
         });
-        Z.recordAccess(appName);
-
+        
         // Set API path
         const currentPath = window.location.href;
         if (currentPath.includes('127.0')) {
